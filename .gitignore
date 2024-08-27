@@ -1,0 +1,4 @@
+# Ignore everything else in `ass1` (if there are other types of files you want to ignore)
+
+ass1/*
+!ass1/*.cpp
