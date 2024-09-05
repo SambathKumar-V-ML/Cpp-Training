@@ -17,12 +17,21 @@ class student{
 
 int student::rollnocount = 0;
 
-int main(){
+void recc(student* array, int n){
+        
+	if(n<=0){
+		return ;
+	}
+	array[n-1].getval();             
+        recc(array, n-1);
 
+};
+
+int main(){
+	cout<<"Size of class: "<<sizeof(student)<<endl;
         student arr[5];
-        for(int i = 0; i < 5; i++) {
-                arr[i].getval();             //change the loop to recursion
-        }
+	cout<<"Size of arr: "<<sizeof(arr)<<endl;
+	recc(arr,5);
         return 0;
 
 }
